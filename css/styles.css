@@ -1,0 +1,344 @@
+@import url(./stylesGrid.css);
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+
+   
+    
+}
+.alturavh{
+    height: 25vh;
+}
+
+.anchovh{
+    width: 50vh;
+}
+
+.colorGold{
+    background-color: gold;
+}
+
+.fondoGris{
+    background-color: #BCBCBC;
+}
+
+.fondoRojizo{
+    background-color: #966C5E;
+}
+
+.shadow{
+    box-shadow: 10px 5px 5px black;;
+}
+
+::placeholder { color: white; padding-left: 10px;}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1400px){
+    #fotoPrincipal{
+   
+        height: 25vh;
+        width: 25vh;
+        margin: 0vh 1vh 1vh 1vh
+        
+    }
+    div h2{
+        width: 50vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 45vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h4{
+        width: 20vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+}
+
+@media (max-width: 1200px){
+    #promociones{
+        font-size: 25px;
+    }
+    #secPromos{
+        font-size: 25px;
+    }
+    #ramYdiscos{
+        height: 23vh;
+           
+    }
+    #proceYmother{
+        
+        height: 23vh;
+        
+    }
+    #gabYfuentes{
+        
+        height: 23vh;
+    }
+    #placasVideo{
+        
+        height: 23vh;
+    }
+    #mainPromoUno{
+        height: 60vh;
+    }
+    #mainProductos{
+        height: 60vh;
+    }
+    div h2{
+        width: 70vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 40vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h4{
+        width: 15vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    #productoPubliDerecha{
+        width: 0px;
+        height: 0px;
+    }
+
+
+}
+
+@media (max-width: 992px){
+    #ramYdiscos{
+        font-size: 30px;
+    }
+    #principal{
+        height: 55vh;
+    }
+    #seBorran{
+        height: 0px;
+        width: 0px;
+    }
+    #promo1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #fotoPromo{
+        height: 15vh;
+        width: 15vh;
+        margin-bottom: 2vh;
+    }
+    div h2{
+        width: 35vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 30vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h4{
+        width: 15vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    
+    
+   
+}
+
+
+@media (max-width: 768px){
+    #promociones{
+        font-size: 20px;
+    }
+    #ramYdiscos{
+        font-size: 25px;
+    }
+    #filtros ul li a{
+        font-size: 16px;
+    }
+    #navBtn{
+        font-size: 20px !important;
+    }
+    
+    div h2{
+        width: 30vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 25vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h4{
+        width: 15vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+
+    #mainProductos{
+        height: 50vh;
+    }
+    #fotoSecundaria{
+    
+   
+        height: 10vh;
+        width: 10vh;
+    }
+    
+}
+@media(max-width: 760px){
+    div h2{
+        width: 20vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 15vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh;
+        font-size: 1rem;
+    }
+    div h4{
+        width: 10vh;
+        margin: 0vh 1vh 1vh 1vh;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 620px){
+    #promociones{
+        font-size: 15px;
+    }
+    #secPromos{
+        font-size: 15px;
+    }
+    #ramYdiscos{
+        font-size: 20px;
+        height: 20vh;
+    }
+    #proceYmother{
+        font-size: 25px;
+        height: 20vh;
+        
+    }
+    #gabYfuentes{
+        font-size: 25px;
+        height: 20vh;
+    }
+    #placasVideo{
+        font-size: 25px;
+        height: 20vh;
+    }
+    #mainPromoUno{
+        height: 50vh;
+    }
+    div h2{
+        width: 20vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 15vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h4{
+        width: 15vh;
+        margin: 0vh 1vh 1vh 1vh;
+       
+    }
+   
+    
+}
+@media(max-width: 576px){
+    #promociones{
+        font-size: 10px;
+    }
+    #ramYdiscos{
+        font-size: 15px;
+        height: 20vh;
+           
+    }
+    #proceYmother{
+        font-size: 15px;
+        height: 20vh;
+        
+    }
+    #gabYfuentes{
+        font-size: 15px;
+        height: 20vh;
+    }
+    #placasVideo{
+        font-size: 15px;
+    }
+    #encabezado{
+        height: 14vh !important;
+        
+    }
+    #mainPromoUno{
+        height: 50vh;
+    }
+    #fotoPromo{
+        height: 15vh;
+        width: 15vh;
+        margin-bottom: 2vh;
+    }
+    div h2{
+        width: 15vh;
+        margin: 0vh 1vh 1vh 1vh
+    }
+    div h3{
+        width: 10vh;
+        height: 10vh;
+        margin: 0vh 1vh 1vh 1vh;
+        font-size: 1rem;
+    }
+    div h4{
+        width: 8vh;
+        margin: 0vh 1vh 1vh 1vh;
+        font-size: 0.8rem;
+       
+    }
+    
+}
+    
+@media(max-width: 577px){
+    #fotoPromo{
+        height: 10vh;
+        width: 10vh;
+        margin-bottom: 2vh;
+    }
+}
+    
+    
+    
+
+@media(max-width: 428px){
+    #promociones{
+        font-size: 9px;
+    }
+    #ramYdiscos{
+        font-size: 15px;           
+    }
+    #proceYmother{
+        font-size: 15px;
+    }
+    #gabYfuentes{
+        font-size: 15px;  
+    }
+    #placasVideo{
+        font-size: 15px;
+    }
+    #fotoPromo{
+        height: 10vh;
+        width: 10vh;
+        margin-bottom: 2vh;
+    }
+   
+    
+}
+
+
+
