@@ -1,4 +1,4 @@
-@import url(./stylesGrid.css);
+
 
 *{
     padding: 0px;
@@ -16,10 +16,6 @@
     width: 50vh;
 }
 
-.colorGold{
-    background-color: gold;
-}
-
 .fondoGris{
     background-color: #BCBCBC;
 }
@@ -34,7 +30,9 @@
 
 ::placeholder { color: white; padding-left: 10px;}
 
-
+#encabezado{
+    background: url(/assets/bannerFondo.avif);
+}
 
 
 /* MEDIA QUERIES */
@@ -47,18 +45,22 @@
         margin: 0vh 1vh 1vh 1vh
         
     }
-    div h2{
+    #tituloProducto{
         width: 50vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 45vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h4{
+    #precioProducto{
         width: 20vh;
         margin: 0vh 1vh 1vh 1vh
+    }
+    #productoPubliDerecha img{
+        width: 0px;
+        height: 0px;
     }
 }
 
@@ -92,25 +94,51 @@
     #mainProductos{
         height: 60vh;
     }
-    div h2{
+    #tituloProducto{
         width: 70vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 40vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h4{
+    #precioProducto{
         width: 15vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    #productoPubliDerecha{
+    #productoPubliDerecha img{
         width: 0px;
         height: 0px;
     }
+    #comprarProducto #tituloProducto{
+       
+        width: 50vh;
+      }
+    #comprarProducto #descProducto{
+          width: 35vh;
+          
+    }
+    #publiPromoDerecha img{
+        width: 0vh !important
+        
+    }
+}
 
-
+@media(max-width: 1100px){
+    #comprarProducto #tituloProducto{
+        
+        width: 40vh;
+      }
+      #comprarProducto #descProducto{
+          width: 33vh;
+          
+      }
+      #comprarProducto #precioProducto{
+       
+        width: 25vh;
+        
+      }
 }
 
 @media (max-width: 992px){
@@ -133,24 +161,53 @@
         width: 15vh;
         margin-bottom: 2vh;
     }
-    div h2{
+    #tituloProducto{
         width: 35vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 30vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h4{
+    #precioProducto{
         width: 15vh;
         margin: 0vh 1vh 1vh 1vh
     }
+    #publiIzquierda img{
+        width: 0px;
+        height: 0px;
+    }
+    #comprarProducto #tituloProducto{
+     
+      width: 48vh;
+    }
+    #comprarProducto #descProducto{
+        width: 30vh;
+        font-size: 0.9rem;
+    }
     
     
-   
+    
 }
-
+@media(max-width: 860px){
+    #comprarProducto #tituloProducto{
+        
+        width: 40vh;
+      }
+    #comprarProducto #descProducto{
+          width: 25vh;
+          font-size: 0.8rem;
+    }
+    #comprarProducto #precioProducto{
+        font-size: 1.5rem;
+    }
+    #promo1 img{
+        width: 10vh;
+        height: 10vh;
+        
+    }
+}
 
 @media (max-width: 768px){
     #promociones{
@@ -166,16 +223,16 @@
         font-size: 20px !important;
     }
     
-    div h2{
+    #tituloProducto{
         width: 30vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 25vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h4{
+    #precioProducto{
         width: 15vh;
         margin: 0vh 1vh 1vh 1vh
     }
@@ -189,20 +246,35 @@
         height: 10vh;
         width: 10vh;
     }
+    #comprarProducto #tituloProducto{
+       
+        width: 30vh;
+        font-size: 1.5rem;
+      }
+    #comprarProducto #descProducto{
+          width: 20vh;
+          font-size: 0.7rem;
+      }
+    #comprarProducto #precioProducto{
+        font-size: 1.2rem;
+      }
     
+   
 }
+    
+
 @media(max-width: 760px){
-    div h2{
+    #tituloProducto{
         width: 20vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 15vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh;
         font-size: 1rem;
     }
-    div h4{
+    #precioProducto{
         width: 10vh;
         margin: 0vh 1vh 1vh 1vh;
         font-size: 1rem;
@@ -235,22 +307,42 @@
     #mainPromoUno{
         height: 50vh;
     }
-    div h2{
+    #tituloProducto{
         width: 20vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 15vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h4{
+    #precioProducto{
         width: 15vh;
         margin: 0vh 1vh 1vh 1vh;
        
     }
    
-    
+@media(max-width: 690px){
+    #comprarProducto #tituloProducto{
+        
+        width: 25vh;
+        font-size: 1.3rem;
+      }
+    #comprarProducto #descProducto{
+          width: 15vh;
+          font-size: .6rem;
+      }
+    #comprarProducto #precioProducto{
+        font-size: 1rem;
+      }
+
+    #comprarProducto #fotoPrincipal{
+        width: 20vh;;
+      }
+    #secFotosSecundarias #fotoSecundaria{
+        width: 15vh;
+    }
+}    
 }
 @media(max-width: 576px){
     #promociones{
@@ -285,23 +377,51 @@
         width: 15vh;
         margin-bottom: 2vh;
     }
-    div h2{
+    #tituloProducto{
         width: 15vh;
         margin: 0vh 1vh 1vh 1vh
     }
-    div h3{
+    #descProducto{
         width: 10vh;
         height: 10vh;
         margin: 0vh 1vh 1vh 1vh;
         font-size: 1rem;
     }
-    div h4{
+    #precioProducto{
         width: 8vh;
         margin: 0vh 1vh 1vh 1vh;
         font-size: 0.8rem;
        
     }
-    
+    #comprarProducto #tituloProducto{
+        
+        width: 19vh;
+        font-size: 1rem;
+      }
+    #comprarProducto #descProducto{
+          width: 8vh;
+          font-size: .5rem;
+      }
+    #comprarProducto #precioProducto{
+        font-size: 1rem;
+      }
+
+    #comprarProducto #fotoPrincipal{
+        width: 14vh;;
+      }
+    #secFotosSecundarias #fotoSecundaria{
+        width: 12vh;
+    }
+    #publiPromoIzquierda img{
+        width: 20vh !important;
+    }
+    #precioPromo{
+        font-size: 1.2rem !important;
+    }
+    #botonComprarPromo button{
+        height: 5vh;
+        font-size: 1rem !important;
+    }
 }
     
 @media(max-width: 577px){
@@ -336,9 +456,310 @@
         width: 10vh;
         margin-bottom: 2vh;
     }
-   
+    #comprarProducto #tituloProducto{
+        
+        width: 15vh;
+        font-size: 0.7rem;
+      }
+    #comprarProducto #descProducto{
+          width: 5vh;
+          font-size: .3rem;
+      }
+    #comprarProducto #precioProducto{
+        font-size: 1rem;
+      }
+
+    #comprarProducto #fotoPrincipal{
+        width: 14vh;;
+      }
+    #secFotosSecundarias #fotoSecundaria{
+        width: 12vh;
+    }
     
 }
+
+
+/* ESTILOS HTML PAGES PROCE Y MOTHERS */
+
+
+
+#mainProceYMother{
+    height: 65vh;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: 2fr 0.7fr 2fr;
+    grid-template-areas:
+    "titulos titulos titulos"
+    "asideIzquierdo . asideDerecho"
+    ;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    text-align: end;
+}
+
+#titulos{
+    grid-area: titulos;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0vh 2.5vh 0vh 2.5vh;
+}
+
+#asideIzquierdo{
+    grid-area: asideIzquierdo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 1vh;
+    
+}
+
+#asideIzquierdo ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#asideDerecho{
+    grid-area: asideDerecho;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+#asideDerecho ul li a{
+    color: white;
+    text-decoration: none;
+}
+#mother{
+    grid-area: mother;
+}
+
+#proce{
+    grid-area: proce;
+}
+
+
+
+aside div{
+    text-align: center;
+}
+
+#foto{
+    display: block;
+    background-color: #D9D9D9;
+    height: 10vh;
+    width: 10vh;
+}
+
+/* ESTILOS HTML "PRODUCTO 1" */
+
+#mainProductos{
+    height: 65vh;
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "publiIzquierda comprarProducto productoPubliDerecha"
+    "publiIzquierda comprarProducto productoPubliDerecha"
+    "publiIzquierda comprarProducto productoPubliDerecha"
+    "publiIzquierda secFotosSecundarias productoPubliDerecha"
+    "publiIzquierda secBoton productoPubliDerecha"
+    "footer footer footer";
+}
+#secBoton{
+    grid-area: secBoton;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+#secFotosSecundarias{
+    grid-area: secFotosSecundarias;
+    display: flex;
+    margin-left: 5vh;
+    
+}
+
+#comprarProducto{
+    margin-top: 3vh;
+    grid-area: comprarProducto;
+    display: flex;
+    justify-content: start;
+    margin-left: 5vh;
+    
+
+}
+
+#tituloProducto{
+    width: 60vh;
+    color: #000000;
+    font-size: 2rem;
+    border-bottom: 4px solid black;
+    margin-left: 2vh;
+}
+
+#descProducto{
+    width: 45vh;
+    height: 10vh;
+    color: #000000;
+    margin-left: 2vh;
+    
+}
+
+#precioProducto{
+    width: 20vh;
+    font-size: 2rem;
+    text-align: end;
+    color: #030303;
+    margin-left: 2vh;
+    text-align: center;
+}
+
+#fotoPrincipal{
+    display: flex;
+    height: 30vh;
+    width: 30vh;
+    margin-right: 1vh;
+    
+    
+}
+
+#fotoSecundaria{
+    height: 15vh;
+    width: 20vh;
+}
+
+
+#publiIzquierda{
+    margin-top: 1vh;
+    margin-left: 3vh;
+    grid-area: publiIzquierda;
+    display: inline;    
+    
+    
+}
+
+#publiIzquierda img{
+    margin-bottom: 10vh;
+    
+}
+
+#productoPubliDerecha{
+    margin-top: 1vh;
+    grid-area: productoPubliDerecha;
+    
+}
+
+#productoPubliDerecha img{
+    margin-bottom: 10vh;
+    
+}
+
+
+/* ESTILOS HTML "PROMO 1" */
+
+#mainPromoUno{
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  grid-template-rows: 1fr 8fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas:
+  "publiPromoIzquierda promo1 publiPromoDerecha"
+  "publiPromoIzquierda promo1 publiPromoDerecha"
+  "publiPromoIzquierda precioPromo publiPromoDerecha"
+  "publiPromoIzquierda botonComprar publiPromoDerecha"
+  "footer footer footer"
+  ;
+}
+
+#promo1{
+    grid-area: promo1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#fotoPromo{
+    display: block;
+    height: 20vh;
+    width: 20vh;
+    margin-bottom: 2vh;
+    
+}
+
+#nombreProdPromo{
+    color: #000000;
+}
+
+#precioPromo{
+    grid-area: precioPromo;
+    color: #000000;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;    
+    border-bottom: 1px solid black;
+}
+
+#botonComprarPromo{
+    grid-area: botonComprar;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#botonComprarPromo button{
+    background-color: #966C5E;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+#publiPromoIzquierda{
+    margin-top: 1vh;
+    margin-left: 2.5vh;
+    grid-area: publiPromoIzquierda;
+    display: inline;   
+
+}
+#publiPromoIzquierda img{
+    width: 31vh;
+    height: 63vh;
+}
+
+#publiPromoDerecha{
+    margin-top: 2vh;
+    margin-right: 2vh;
+    grid-area: publiPromoDerecha;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#publiPromoDerecha img{
+    width: 31vh;
+    height: 63vh;
+}
+
+
 
 
 

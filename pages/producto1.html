@@ -16,11 +16,11 @@
     <!-- ENCABEZADO -->
     <header>
       <div class="container-fluid">
-        <div class="row m-3 fondoGris">
+        <div id="encabezado" class="row m-3">
           <div class="col-4">
             <img
               style="width: 15vh; height: 8vh"
-              src="../assets/LogoLeon.png"
+              src="/assets/LogoLeon.png"
               alt="Logo"
             />
           </div>
@@ -62,12 +62,14 @@
       <div class="container-fluid">
         <div class="row m-3 fondoGris text-center fs-3 shadow">
           <div class="col-md-3">
-            <a class="text-decoration-none text-white" href="../index.html"
+            <a class="text-decoration-none text-white" href="/index.html"
               >INICIO</a
             >
           </div>
           <div class="col-md-3">
-            <a class="text-decoration-none text-white" href="./productos.html"
+            <a
+              class="text-decoration-none text-white"
+              href="/pages/productos.html"
               >PRODUCTOS</a
             >
           </div>
@@ -83,26 +85,65 @@
     <!-- MAIN -->
 
     <main id="mainProductos">
-      <aside id="publiIzquierda" class="fondoRojizo">PUBLICIDAD</aside>
+      <!-- ASIDE PUBLICIDAD IZQUIERDA  -->
+      <aside id="publiIzquierda" class="">
+        <img src="/assets/publi.png" alt="PUBLICIDAD" />
+        <img src="/assets/publi.png" alt="PUBLICIDAD" />
+      </aside>
+
+      <!-- MAIN COMPRAR PRODUCTO, FOTO PRINCIPAL, TITULOS, DESCRIPCION Y PRECIOS  -->
       <section id="comprarProducto">
         <div>
-          <img id="fotoPrincipal" class="fondoRojizo" src="" alt="" />FOTO
-          PRODUCTO
+          <img
+            id="fotoPrincipal"
+            class=""
+            src="/assets/mother.jpeg"
+            alt="Foto Principal"
+          />
         </div>
         <div>
-          <h2 class="fondoGris">TITULO PRODUCTO</h2>
-          <h3 class="fondoGris">DESCRIPCION PRODUCTO</h3>
-          <h4 class="fondoGris">PRECIO PRODUCTO</h4>
+          <p id="tituloProducto" class="">Motherboard AMD B450 AORUS</p>
+          <p id="descProducto" class="">
+            PWM digital híbrido, M.2 con protección térmica, LAN de juegos
+            GIGABYTE con protección ESD de 25KV, diseño anti-azufre, listo para
+            CEC 2019, RGB FUSION 2.0
+          </p>
+          <strong><p id="precioProducto" class="">$50.000</p></strong>
         </div>
       </section>
+      <!-- SECTION FOTOS SECUNDARIAS PRODUCTO 1 -->
+
       <section id="secFotosSecundarias">
-        <img id="fotoSecundaria" class="fondoRojizo" src="" alt="" />
-        <img id="fotoSecundaria" class="fondoRojizo" src="" alt="" />
-        <img id="fotoSecundaria" class="fondoRojizo" src="" alt="" />
+        <img
+          id="fotoSecundaria"
+          class=""
+          src="/assets/motherAlt1.jpg"
+          alt="Foto Alternativa"
+        />
+        <img
+          id="fotoSecundaria"
+          class=""
+          src="/assets/motherAlt2.jpg"
+          alt="Foto Alternativa"
+        />
+        <img
+          id="fotoSecundaria"
+          class=""
+          src="/assets/motherAlt3.jpg"
+          alt="Foto Alternativa"
+        />
       </section>
+
+      <!-- BOTON COMPRAR -->
+
       <section id="secBoton"><button>SUMAR AL CARRITO</button></section>
 
-      <aside id="productoPubliDerecha" class="fondoRojizo">PUBLICIDAD</aside>
+      <!-- ASIDE PUBLICIDAD DERECHA  -->
+
+      <aside id="productoPubliDerecha">
+        <img src="/assets/publi.png" alt="PUBLICIDAD" />
+        <img src="/assets/publi.png" alt="PUBLICIDAD" />
+      </aside>
     </main>
 
     <!-- FOOTER -->

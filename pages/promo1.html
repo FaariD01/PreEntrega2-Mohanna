@@ -16,11 +16,11 @@
     <!-- ENCABEZADO -->
     <header>
       <div class="container-fluid">
-        <div class="row m-3 fondoGris">
+        <div id="encabezado" class="row m-3">
           <div class="col-4">
             <img
               style="width: 15vh; height: 8vh"
-              src="../assets/LogoLeon.png"
+              src="/assets/LogoLeon.png"
               alt="Logo"
             />
           </div>
@@ -62,12 +62,14 @@
       <div class="container-fluid">
         <div class="row m-3 fondoGris text-center fs-3 shadow">
           <div class="col-md-3">
-            <a class="text-decoration-none text-white" href="../index.html"
+            <a class="text-decoration-none text-white" href="/index.html"
               >INICIO</a
             >
           </div>
           <div class="col-md-3">
-            <a class="text-decoration-none text-white" href="./productos.html"
+            <a
+              class="text-decoration-none text-white"
+              href="/pages/productos.html"
               >PRODUCTOS</a
             >
           </div>
@@ -83,27 +85,52 @@
     <!-- MAIN -->
 
     <main id="mainPromoUno">
-      <aside id="publiIzquierda" class="fondoRojizo">PUBLICIDAD</aside>
+      <!-- ASIDE PUBLICIDAD IZQUIERDA  -->
+      <aside id="publiPromoIzquierda">
+        <img src="/assets/publi2.png" alt="" />
+      </aside>
+
+      <!-- SECTION MAIN PROMOS FOTOS Y TITULOS -->
       <section id="promo1">
         <div>
-          <img id="fotoPromo" class="fondoRojizo" src="#" alt="" />
-          <p class="fondoGris">Nombre</p>
+          <img
+            id="fotoPromo"
+            class=""
+            src="/assets/FotoPromo1.jpg"
+            alt="Foto Producto"
+          />
+          <p id="nombreProdPromo">MICRO AMD RYZEN 5 5600G</p>
         </div>
         <div>
-          <img id="fotoPromo" class="fondoRojizo" src="#" alt="" />
-          <p class="fondoGris">Nombre</p>
+          <img
+            id="fotoPromo"
+            src="/assets/FotoPromo2.jpg"
+            alt="Foto Producto"
+          />
+          <p id="nombreProdPromo">MOTHER BIOSTAR A320M-H</p>
         </div>
         <div>
-          <img id="fotoPromo" class="fondoRojizo" src="#" alt="" />
-          <p class="fondoGris">Nombre</p>
+          <img
+            id="fotoPromo"
+            src="/assets/FotoPromo3.jpg"
+            alt="Foto Producto"
+          />
+          <p id="nombreProdPromo">MEMORIA 8GB DDR4 3200 ADATA</p>
         </div>
       </section>
+
+      <!-- PRECIO PROMO Y BOTON COMPRAR -->
+
+      <strong><p id="precioPromo">$52.195,13</p></strong>
       <div id="botonComprarPromo">
-        <button class="fondoRojizo text-white border-0 rounded-1 fs-4">
-          SUMAR AL CARRITO
-        </button>
+        <button>SUMAR AL CARRITO</button>
       </div>
-      <aside id="publiDerecha" class="fondoRojizo">PUBLICIDAD</aside>
+
+      <!-- ASIDE PUBLICIDAD DERECHA  -->
+
+      <aside id="publiPromoDerecha">
+        <img src="/assets/publi2.png" alt="" />
+      </aside>
     </main>
 
     <!-- FOOTER -->
@@ -117,6 +144,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
